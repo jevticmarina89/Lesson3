@@ -5,17 +5,23 @@ import java.util.Random;
 public class Validation {
 	public static void main(String[] args) {
 
-		// 1. Watch the first 2 minutes of this movie: http://vimeo.com/2485018
-		int randomNumber = new Random().nextInt(5);
-		// 2. On paper, write all the numbers that get printed when you run this class
-		System.out.println(randomNumber);
-
-		// 3. Use the randomNumber to give the user a random compliment.
-
-		// 4. Repeat all the code above 10 times
 		
-		// 5. Find someone to test out your program. They will like it :)
+		for (int i = 0; i < 11; i++) {
+			int randomNumber = new Random().nextInt(5);
+			
+			System.out.print(randomNumber);
+
+			if (randomNumber == 1)
+				System.out.println(" You are so nice!");
+			if (randomNumber == 2)
+				System.out.println(" You have beautiful cheekbones!");
+			if (randomNumber == 3)
+				System.out.println(" You are great!!!");
+			if (randomNumber == 4)
+				System.out.println(" You have gorgeous smile!");
+			if(randomNumber == 0)
+				System.out.println(" Your eyes are beautiful!");
+		}
+
 	}
 }
-
-
