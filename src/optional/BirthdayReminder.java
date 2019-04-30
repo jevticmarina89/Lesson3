@@ -1,25 +1,36 @@
 package optional;
 
+import java.util.Scanner;
+
 public class BirthdayReminder {
 
 	public static void main(String[] args) {
 		
-		// 1. correct the birthdays for your family below
-		String momsBirthday = "January 24th";
-		String dadsBirthday = "June 9th";
-		String myBirthday = "April 16th";
-
-		// 2. Find out which birthday the user wants and and store their response in a variable
-	
-		// 3. Print out what the user typed
 		
-		// 4. if user asked for "mom"
-			//print mom's birthday
-		// 5. if user asked for "dad"
-			// print dad's birthday
-		// 6. if user asked for your name
-			// print myBirthday
-		//7. otherwise print "Sorry, i don't remember that person's birthday!"
+		String momsBirthday = "September 28th";
+		String dadsBirthday = "October 27th";
+		String myBirthday = "June 30th";
+
+		
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter which one's birthday do you want: ");
+	String person = sc.nextLine();
+		
+	System.out.println(person);	
+		
+	if(person.equals("mom")) {
+		System.out.println(momsBirthday);
+	}
+	else if(person.equals("dad")) {
+		System.out.println(dadsBirthday);
+	}
+	else if(person.equals("marina")) {
+		System.out.println(myBirthday);
+	}
+	else {
+		System.out.println("Sorry, i don't remember that person's birthday!");
+	}
+		
 
 	}
 }
